@@ -1,23 +1,54 @@
 aid: 1126833-b-c-ltd
 name: 1126833 B.C. LTD.
-description: '1126833 B.C. LTD. is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 1126833 B.C. LTD. is a numbered British Columbia holding company, incorporated in 2017
+  and administered c/o Warburg Pincus & Co. at 450 Lexington Avenue, New York. It is not an operating
+  business. Its entire public record is nine SEC Form D / Form D-A notices of exempt offering (CIK
+  0001737678, industry group "Other", January 2019 through July 2026) covering an equity stock incentive
+  plan; the officers named on them are the President and Chief Executive Officer of eSentire, Inc.,
+  the Waterloo, Ontario managed detection and response company in which Warburg Pincus holds a majority
+  stake, which identifies this entity as the holding vehicle above that operating company. It publishes
+  no website, product, documentation or developer surface of its own, and SEC EDGAR records no website
+  for it. The group API surface belongs to eSentire, Inc., is profiled separately under the esentire
+  slug, and is deliberately not credited here.
 url: https://raw.githubusercontent.com/api-evangelist/1126833-b-c-ltd/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-entity-type: holding-company
+x-sec-cik: '0001737678'
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Holding Company
+- Special Purpose Vehicle
+- Private Equity
+- Corporate Entity
+- Canada
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://www.nasdaqprivatemarket.com/
+common: []
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: 1126833 B.C. LTD. is a numbered British Columbia holding vehicle administered
+    c/o Warburg Pincus whose only public footprint is nine SEC Form D/D-A stock-incentive-plan
+    notices under CIK 0001737678 — EDGAR records no website for it, so there is no
+    host, product or developer program that could carry an API.
+  evidence:
+  - url: https://data.sec.gov/submissions/CIK0001737678.json
+    status: 200
+  - url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001737678&type=D
+    status: 200
+  - url: https://www.nasdaqprivatemarket.com/
+    status: 200
+  checked: '2026-09-05'
